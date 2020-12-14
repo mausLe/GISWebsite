@@ -9,5 +9,5 @@ def location(request):
     return render( request, "accounts/location.html")
 
 
-def speed(request):
-    return render( request, "accounts/speed.html")
+def history(request):
+    return render( request, "accounts/history.html")

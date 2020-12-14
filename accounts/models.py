@@ -19,13 +19,15 @@ class TrackingDevice (models.Model):
     mfd = models.DateTimeField(auto_now_add=True, null=True)
     warranty = models.DateTimeField(auto_now_add=True, null=True)
 
-    userid = models.ForeignKey(User, on_delete=models.CASCADE)
+    userid = models.ForeignKey(User, null=True,  on_delete=models.SET_NULL)
+
 
 class TrackingData (models.Model):
     dataID = models.IntegerField(primary_key=True)
     longitude = models.FloatField(null=True)
     lattitude = models.FloatField(null=True)
     timeRecorded = models.DateTimeField(auto_now_add=True, null=True)
-    deviceid = models.ForeignKey(TrackingDevice, on_delete=models.CASCADE)
-
+    
+    deviceid = models.ForeignKey(TrackingDevice, null=True, on_delete=models.SET_NULL)
+    
 
