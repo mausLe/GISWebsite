@@ -13,9 +13,8 @@ def createMap():
     return context
 
 def home(request):
-    context = createMap()
-
-    return render( request, "accounts/main.html", context)
+    
+    return location(request)
 
 def location(request):
 
@@ -27,5 +26,6 @@ def location(request):
 
 def history(request):
     # Load database to mark user location
+    context = createMap()
 
-    return render( request, "accounts/history.html")
+    return render( request, "accounts/history.html", context)
