@@ -39,6 +39,7 @@ with SSHTunnelForwarder(
     # conn = pymysql.connect(host='127.0.0.1', user=sql_username,
     #       passwd=sql_password, db=sql_main_database,
     #      port=tunnel.local_bind_port)
+    # Khuong : hello
 
     conn = mysql.connector.connect(
         user = sql_username,
