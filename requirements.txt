@@ -1,0 +1,8 @@
+django == 3.1.4
+folium == 0.11.0
+geodjango
+pymysql
+paramiko
+pandas
+sshtunnel
+mysql.connector
