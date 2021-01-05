@@ -115,7 +115,7 @@ def history(request):
         minutes = seconds // 60
         seconds %= 60
         h = "%d:%02d:%02d" % (hour, minutes, seconds)
-        folium.CircleMarker(location = coordinates[i], radius=10, popup = (h, t)).add_to(map)
+        folium.CircleMarker(location = coordinates[i], radius=10, popup = (h, t), fill=True, fill_color="Blue").add_to(map)
 
     folium.PolyLine(coordinates, color="red", weight=2.5, opacity=1).add_to(map)
 
