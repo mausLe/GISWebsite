@@ -24,9 +24,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = '%o1gz#cf^-(luql=kh-)mfjj55rokb2#(ox)kgd_eq78voegq)'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ["gis-tracking-deploy.herokuapp.com", "127.0.0.1"]
 
 
 # Application definition
